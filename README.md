@@ -1,16 +1,14 @@
-### Hi there 👋
+### Hi there 👋 This is PlumberMario.🔧
 
-<!--
-**MarioZZJ/MarioZZJ** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarioZZJ&hide=html,css&langs_count=8&theme=radical" />
 
-Here are some ideas to get you started:
+* Undergraduate student of WHU, majoring in Information Management.:classical_building:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+* Amateur programmer, basically learing Python & Java. :hammer:
+
+* Interested in Information Science and Psychology. :star2:
+
+* Reach me at plumbermario@whu.edu.cn. :mailbox_with_mail:
+
+<br />
+<img align="right" src="https://github-readme-stats.vercel.app/api?username=MarioZZJ&count_private=true&show_icons=true&theme=radical&include_all_commits=true" />
