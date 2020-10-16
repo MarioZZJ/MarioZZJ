@@ -1,6 +1,6 @@
 ### Hi there 👋 This is PlumberMario.🔧
 
-<img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarioZZJ&hide=html,css&langs_count=8&theme=radical" />
+<img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarioZZJ&hide=css&langs_count=8&theme=radical" />
 
 * Undergraduate student of WHU, majoring in Information Management.:classical_building:
 
