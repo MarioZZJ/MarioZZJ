@@ -4,7 +4,7 @@
 
 * Undergraduate student of WHU, majoring in Information Management.:classical_building:
 
-* Amateur programmer, basically learing Python & SQL. :hammer:
+* Amateur programmer, basically learning Python & SQL. :hammer:
 
 * Interested in Information Science and Psychology. :star2:
 
