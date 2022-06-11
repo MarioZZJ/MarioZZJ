@@ -1,2 +1,3 @@
 [<img src="/header.png" alt="Header" width="100%">](#)
-[<img width="100%" alt="Metrics" src="https://gist.github.com/MarioZZJ/921692610577001537738699654792e7/raw/general.svg">](#)
+[<img align="left" width="390" alt="Metrics-Left" src="https://gist.githubusercontent.com/lowlighter/3c6eaedf50273adfb7a510822672f570/raw/left.svg">](#)
+[<img align="right" width="390" alt="Metrics-Right" src="https://gist.githubusercontent.com/lowlighter/3c6eaedf50273adfb7a510822672f570/raw/right.svg">](#)
