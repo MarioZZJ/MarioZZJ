@@ -15,7 +15,7 @@ jobs:
       contents: write
     steps:
       - name: left
-        uses: mariozzj/lowlighter-metrics@master
+        uses: mariozzj/lowlighter-metrics@fix-16personalities
         with:
           filename: left.svg
           token: ${{ secrets.METRICS_TOKEN }}
