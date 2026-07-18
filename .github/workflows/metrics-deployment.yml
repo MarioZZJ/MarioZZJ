@@ -1,62 +1,42 @@
-# Visit https://github.com/lowlighter/metrics/blob/master/action.yml for full reference
-name: Metrics
+name: Refresh profile
+
 on:
-  # Schedule updates
-  # schedule: [{cron: "0 0 * * *"}]
-  # Lines below let you run workflow manually and on each commit
+  schedule:
+    - cron: "17 3 * * 1"
   workflow_dispatch:
-  push: {branches: ["master", "main"]}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-refresh
+  cancel-in-progress: true
+
 jobs:
-  github-metrics:
-    runs-on: ubuntu-22.04
-    environment:
-      name: production
-    permissions:
-      contents: write
+  refresh:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
     steps:
-      - name: Install dependencies
+      - name: Check out repository
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Update profile data
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PROFILE_OWNER: ${{ github.repository_owner }}
+          WAKATIME_TOKEN: ${{ secrets.WAKATIME_TOKEN }}
+        run: python scripts/update_profile.py
+
+      - name: Commit changed data
+        shell: bash
         run: |
-          sudo apt-get update
-          sudo apt-get install -y docker.io jq
+          if git diff --quiet -- README.md; then
+            echo "Profile is already current."
+            exit 0
+          fi
 
-      - name: left
-        uses: mariozzj/lowlighter-metrics@fix-16personalities
-        with:
-          filename: left.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: MarioZZJ
-          template: classic
-          base: header
-          base_indepth: yes
-          output_action: gist
-          committer_gist: ${{ secrets.GIST_ID }}
-          config_timezone: Asia/Shanghai
-          plugin_introduction: yes
-          plugin_16personalities: yes
-          plugin_16personalities_url: ${{ secrets.SIXTEEN_PERSONALITIES_URL }}
-          plugin_16personalities_sections: personality
-          plugin_16personalities_scores: no
-          plugin_topics: yes
-          plugin_topics_mode: mastered
-          plugin_topics_sort: starred
-
-      - name: right
-        uses: mariozzj/lowlighter-metrics@master
-        with:
-          filename: right.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: MarioZZJ
-          template: classic
-          base: metadata
-          base_indepth: yes
-          output_action: gist
-          committer_gist: ${{ secrets.GIST_ID }}
-          config_timezone: Asia/Shanghai
-          plugin_wakatime: yes
-          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
-          plugin_wakatime_sections: time, editors, os, language-graphs
-          plugin_wakatime_limit: 3
-          plugin_wakatime_languages_other: yes
-          plugin_wakatime_days: 30
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: 更新个人主页动态数据"
+          git push

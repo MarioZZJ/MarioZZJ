@@ -1,3 +1,15 @@
-[<img align="center" src="https://gist.githubusercontent.com/mariozzj/921692610577001537738699654792e7/raw/header.png" alt="Header" width="100%">](#)
-[<img align="left" width="390" alt="Metrics-Left" src="https://gist.githubusercontent.com/mariozzj/921692610577001537738699654792e7/raw/left.svg">](#)
-[<img align="right" width="390" alt="Metrics-Right" src="https://gist.githubusercontent.com/mariozzj/921692610577001537738699654792e7/raw/right.svg">](#)
+<p align="center">
+  <img src="./assets/header.png" alt="Hi! I'm MarioZZJ" width="100%">
+</p>
+
+<!-- github-bio:start -->
+<p align="center"><strong>Ph.D. candidate in Information Science at NJU. vibe coder</strong></p>
+<!-- github-bio:end -->
+
+<p align="center">
+  <code>Python</code> · <code>SQL / BigQuery</code> · <code>PowerShell / Shell</code> · <code>TypeScript</code> · <code>Rust</code> · <code>Codex</code> · <code>Claude Code</code>
+</p>
+
+<!-- profile-signals:start -->
+<p align="center"><sub>Last 30 days · 56 hrs 44 mins coding · 3.05B WakaTime-tracked AI tokens</sub></p>
+<!-- profile-signals:end -->
