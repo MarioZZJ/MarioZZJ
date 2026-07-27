@@ -11,5 +11,5 @@
 </p>
 
 <!-- profile-signals:start -->
-<p align="center"><sub>Last 30 days · 56 hrs 44 mins coding · 3.05B WakaTime-tracked AI tokens</sub></p>
+<p align="center"><sub>Last 30 days · 50 hrs 13 mins coding · 2.91B WakaTime-tracked AI tokens</sub></p>
 <!-- profile-signals:end -->
