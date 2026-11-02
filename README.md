@@ -3,7 +3,7 @@
 </p>
 
 <!-- github-bio:start -->
-<p align="center"><strong>Ph.D. candidate in Information Science at NJU. vibe coder</strong></p>
+<p align="center"><strong>Ph.D. candidate in Information Science at NJU. vibe creator</strong></p>
 <!-- github-bio:end -->
 
 <p align="center">
@@ -11,5 +11,5 @@
 </p>
 
 <!-- profile-signals:start -->
-<p align="center"><sub>Last 30 days · 41 hrs 15 mins coding · 67.42M WakaTime-tracked AI tokens</sub></p>
+<p align="center"><sub>Last 30 days · 66 hrs 57 mins coding · 152.65M WakaTime-tracked AI tokens</sub></p>
 <!-- profile-signals:end -->
